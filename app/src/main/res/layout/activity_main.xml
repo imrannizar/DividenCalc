@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#761E87"
+        android:minHeight="100dp"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+        app:maxButtonHeight="100dp"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Unit Trust Dividend Calculator"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/investedAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Invested Amount (RM)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/dividendRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Annual Dividend Rate (%)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/monthsInvested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Months Invested (Max 12)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="Calculate" />
+
+    <TextView
+        android:id="@+id/monthlyDividend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Monthly Dividend: RM 0.00" />
+
+    <TextView
+        android:id="@+id/totalDividend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Total Dividend: RM 0.00" />
+
+
+
+</LinearLayout>
